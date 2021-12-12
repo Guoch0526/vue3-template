@@ -1,0 +1,49 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.10",
+    "vuex": "^4.0.2",
+    "vuex-persist": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "@vitejs/plugin-legacy": "^1.4.3",
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "babel-plugin-component": "^1.1.1",
+    "element-plus": "^1.0.2-beta.54",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.0.0",
+    "loadsh": "^0.0.4",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.1",
+    "typescript": "^4.3.5",
+    "vite": "^2.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
