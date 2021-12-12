@@ -1,4 +1,4 @@
-# vue3_template
+# vue3-template
 
 ## 简介
 
